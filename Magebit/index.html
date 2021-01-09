@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Magebit</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src='js/script.js'></script>  
+		<!--<link rel="shortcut icon" href="../../pictures/logo_circle.png"/>    -->
+		
+	</head>
+	<style type="text/css">
+		@media only screen and (max-width:1600px) {
+			.topnav a {
+				margin-left: 3vh;
+			}
+			.topnav img {
+				width: 25%;
+				height: auto;
+			}
+		}
+		@media only screen and (max-width:1460px) {
+			.topnav a {
+				margin-left: 1vh;
+			}
+		}
+		@media only screen and (max-width:1240px) {
+			html, body {
+			   overflow-y: hidden;
+			}
+			body {
+			    background-image: url('images/image_summer.png');
+			    background-repeat: no-repeat;
+ 				 background-size: auto;
+			  }
+			.row {
+				display: none;
+			}
+			.row_mobile {
+				display: block;
+
+			}
+			.topnav_mobile {
+				display: inline-block;
+				width: 100%;
+				height: 66px;
+				background-color: white;
+			}
+		}
+		
+	</style>
+	<body>
+		
+		<div class="row">
+  			<div class="column left">
+  				<div class="topnav">
+  					<img src="images/logo.png">
+					<a href="#">Contact</a>
+					<a href="#">How it works</a>
+					<a href="#">About</a>
+				</div> 
+				<h1 id="h1h1">Subscribe to newsletter</h1>
+				<h2>Subscribe to our newsletter and get 10% discount on pineapple glasses.</h2>
+
+				<form class="input_form" action="send_data.php" name="form1" id="emailform" onsubmit="return validateForm()" method="post">
+					<input class="email" type="text" name="emailbox" placeholder="Type your email address here..."><input id="buttonarrow" class="arrow" type="submit" value="">
+				</form>
+
+				<div class="errormsg" id="errormessage"></div>
+				<label class="container" > I agree to <u style="color: black">terms of service</u>
+					<input type="checkbox"  id="checktos">
+					<span class="checkmark"></span>
+				</label>
+
+
+				<hr class="hr_desktop">  
+				<div class="socials">
+					<a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-youtube-play"></a>
+				</div>
+  			</div>
+
+  			<img class="column right" src="images/image_summer.png" >
+  			</img>
+		</div>
+		<div class="row_mobile">
+			<div class="topnav_mobile">
+				<img src="images/mobile-logo.svg">
+				<a href="#">Contact</a>
+				<a href="#">How it works</a>
+				<a href="#">About</a>
+			</div>
+			
+				
+			<div class="form_mobile">
+				<h1 id="h1_mobile">Subscribe to newsletter</h1>	
+				<h2 id="h2_mobile">Subscribe to our newsletter and get 10% discount on pineapple glasses.</h2>	
+
+				<form class="input_form_mobile" action="send_data.php" name="form1_mobile" id="emailform_mobile" onsubmit="return validateFormMobile()" method="post">
+					<input id="input_email" class="email" type="text" name="emailbox" placeholder="Type your email address here..."><input id="buttonarrow_mobile" class="arrow" type="submit" value="">
+				</form>
+
+				<div class="errormsg_mobile" id="errormessage_mobile"></div>
+				<label class="container_mobile" > I agree to <u style="color: black">terms of service</u>
+					<input type="checkbox"  id="checktos_mobile">
+					<span class="checkmark"></span>
+				</label>
+
+
+				<hr class="hr_mobile"> 
+				<div class="socials_mobile">
+					<a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-youtube-play"></a>
+				</div> 
+			</div>
+			
+		</div>
+
+	</body>
+</html>

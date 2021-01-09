@@ -1,0 +1,570 @@
+* {
+  	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+  	float: left;
+ 	height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.left {
+	background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+ 	width: 35.417%;
+}
+
+.right {
+  	width: 64.583%;
+  	background-image: no-repeat;
+  	z-index: -1000;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ 	content: "";
+ 	display: table;
+	clear: both;
+}
+
+/* MENU */
+
+/* Add a black background color to the top navigation */
+.topnav {
+	/*height: 40px;*/
+	height: 6vh;
+	width: 70.6%;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	/*margin-top: 100px;*/
+	margin-top: 10vh;
+}
+
+.row_mobile {
+	display: none;
+}
+.form_mobile {
+	display: inline-block;
+    position: fixed;
+    top: 66;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.topnav img {
+	float: left;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	float: right;
+	color: #6A707B;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin-left: 30px;
+	line-height: 60px;
+	height: 100%;
+}
+
+.topnav_mobile img {
+	height: 70%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.topnav_mobile a {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	float: right;
+	color: #6A707B;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin-right: 20px;
+	line-height: 75px;
+	height: 100%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	text-decoration: underline;
+	color: #4066A5;
+}
+.topnav a:active {
+	text-decoration-line: underline;
+	color: #233759;
+}
+.success_img {
+	width: 58.7%;
+	margin: 0 auto;
+	margin-top: 13vh;
+}
+.success_img_mobile {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 3vh;
+}
+#h1text {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	/*line-height: 44px;*/
+	line-height: 4.07vh;
+	color: #131821;
+	width: 58.7%;
+	margin: 0 auto;
+	/*margin-top: 234px;*/
+	margin-top: 4vh;
+	/*margin-bottom: 15px;*/
+	margin-bottom: 2vh;
+}
+#h1_mobile_sub {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	/*line-height: 44px;*/
+	color: #131821;
+	width: 91%;
+	margin: 0 auto;
+	/*margin-top: 234px;*/
+	margin-top: 4vh;
+	/*margin-bottom: 15px;*/
+	margin-bottom: 1vh;
+}
+
+#h1h1 {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	/*line-height: 44px;*/
+	line-height: 4.07vh;
+	color: #131821;
+	width: 58.7%;
+	margin: 0 auto;
+	/*margin-top: 234px;*/
+	margin-top: 26vh;
+	/*margin-bottom: 15px;*/
+	margin-bottom: 2vh;
+}
+#h1_mobile {
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: #131821;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+}
+#h2_mobile {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #6A707B;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 2vh;
+}
+#h2_mobile_sub {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #6A707B;
+	width: 91%;
+	margin: 0 auto;
+	margin-bottom: 4vh;
+}
+.left h2 {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	/*line-height: 28px;*/
+	line-height: 2.8vh;
+	color: #6A707B;
+	width: 58.7%;
+	margin: 0 auto;
+	/*margin-bottom: 50px;*/
+	margin-bottom: 5vh;
+}
+.input_form {
+	position: relative;
+	/*height: 70px;*/
+	height: 7.5vh;
+	width: 96%;
+	/*margin: 0 0 50px 15%;*/
+	margin: 0 0 5.5vh 15%;
+}
+.input_form_mobile {
+	position: relative;
+	/*height: 70px;*/
+	height: 7.5vh;
+	width: 90%;
+	/*margin: 0 0 50px 15%;*/
+	margin: 0 auto;
+	margin-bottom: 2vh;
+}
+.email {
+	border: 1px solid #E3E3E4;
+	border-left: 4px solid #4066A5;
+	height: 100%;
+	width: 100%;
+}
+::-webkit-input-placeholder { /* Edge */
+	color: #6A707B;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #6A707B;
+}
+
+::placeholder {
+	color: #6A707B;
+}
+input[type=text]{
+	padding-left:4vh;
+}
+input[type=text]:focus{
+	box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+input[type=text]:hover{
+	box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	border: 1px solid #4066A5;
+	border-left: 4px solid #4066A5;
+	color: black;
+}
+.arrow {
+	background:url(../images/ic_arrow.png) no-repeat;
+	margin-left: -52px; 
+	width: 24px; 
+	height: 14px; 
+	border: none;
+	cursor: pointer;
+}
+
+.errormsg {
+	width: 58.7%;
+	margin: 0 auto;
+	margin-bottom: 2vh;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: red;
+}
+.errormsg_mobile {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 2vh;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: red;
+}
+
+/* The container  terms of service */
+.container {
+	width: 58.7%;
+	margin: 0 auto;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	color: #6A707B;
+	font-size: 16px;
+	display: block;
+	position: relative;
+	padding-top: 4px;
+	padding-left: 35px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 6.5vh;
+	/*margin-bottom: 50px;*/
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	border-radius: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 26px;
+	width: 26px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #4066A5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 13px;
+  border-radius: 0.5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Same styling for mobile checkbox */
+/*  MOBILE  */
+/* The container  terms of service */
+.container_mobile {
+	width: 90%;
+	margin: 0 auto;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	color: #6A707B;
+	font-size: 16px;
+	display: block;
+	position: relative;
+	padding-top: 4px;
+	padding-left: 35px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 3vh;
+	/*margin-bottom: 50px;*/
+}
+
+/* Hide the browser's default checkbox */
+.container_mobile input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	border-radius: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 26px;
+	width: 26px;
+	background-color: #FFFFFF;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.container_mobile input:checked ~ .checkmark {
+  background-color: #4066A5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_mobile input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_mobile .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 13px;
+  border-radius: 0.5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.hr_desktop {
+	color: #E3E3E4;
+	width: 58.7%;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+.hr_mobile {
+	color: #E3E3E4;
+	width: 90%;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+.socials {
+	text-align: center;
+	width: 58.7%;
+	margin: 0 auto;
+	margin-top: 6vh;
+}
+.socials_mobile {
+	text-align: center;
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 2vh;
+}
+.socials a {
+	margin-right: 1vw;
+}
+.socials_mobile a {
+	margin-right: 0.5vw;
+}
+/*
+.facebook img:last-child {
+	display: none;
+}
+.facebook:hover img:last-child {
+	display: inline-block;
+}
+.facebook:hover img:first-child {
+	display: none;
+}
+
+.instagram img:last-child {
+	display: none;
+}
+.instagram:hover img:last-child {
+	display: inline-block;
+}
+.instagram:hover img:first-child {
+	display: none;
+}
+*/
+
+.fa {
+  width: 46px;
+  height: 46px;
+  padding-top: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid #131821;
+}
+.fa-facebook {
+	color: #131821;
+	opacity: 0.2;
+}
+.fa-instagram {
+	color: #131821;
+	opacity: 0.2;
+}
+.fa-twitter {
+	color: #131821;
+	opacity: 0.2;
+}
+.fa-youtube-play {
+	color: #131821;
+	opacity: 0.2;
+}
+
+.fa-facebook:hover {
+	background: #4267B2;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-instagram:hover {
+	background: #C13584;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-twitter:hover {
+	background: #1DA1F2;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-youtube-play:hover {
+	background: #FF0000;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.fa-facebook:active {
+	background: #2F4A80;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-instagram:active {
+	background: #8F2762;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-twitter:active {
+	background: #177FBF;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.fa-youtube-play:active {
+	background: #CC0000;
+	color: white;
+	opacity: 1;
+	border: 0;
+	box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
